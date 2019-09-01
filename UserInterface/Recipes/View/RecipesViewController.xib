@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecipesViewController" customModule="UserInterface" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="YeU-nh-dkE" id="5zs-sn-TdV"/>
+                <outlet property="emptyStateView" destination="cQ4-IX-Wbg" id="Dp7-6n-f6f"/>
+                <outlet property="recipesTableView" destination="ZLi-Zf-o7l" id="X2E-qB-tnM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZLi-Zf-o7l">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="906"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQ4-IX-Wbg" customClass="EmptyStateView" customModule="UserInterface" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="YeU-nh-dkE">
+                    <rect key="frame" x="188.5" y="434.5" width="37" height="37"/>
+                    <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZLi-Zf-o7l" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HWj-zb-YrW"/>
+                <constraint firstItem="YeU-nh-dkE" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="JJe-WD-M0m"/>
+                <constraint firstItem="ZLi-Zf-o7l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="b5D-O3-r8q"/>
+                <constraint firstItem="cQ4-IX-Wbg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="c0K-wV-I5M"/>
+                <constraint firstItem="cQ4-IX-Wbg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ewu-mE-nHZ"/>
+                <constraint firstItem="cQ4-IX-Wbg" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="jGd-OM-yGS"/>
+                <constraint firstItem="YeU-nh-dkE" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="jym-UI-e3J"/>
+                <constraint firstAttribute="top" secondItem="ZLi-Zf-o7l" secondAttribute="top" id="rua-35-okI"/>
+                <constraint firstItem="ZLi-Zf-o7l" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="5" id="vgn-uZ-4iU"/>
+                <constraint firstItem="cQ4-IX-Wbg" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="wGV-Qh-bGC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

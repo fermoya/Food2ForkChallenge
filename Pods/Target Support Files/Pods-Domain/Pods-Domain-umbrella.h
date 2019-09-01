@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_Food2ForkChallengeUITestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_Food2ForkChallengeUITestsVersionString[];
+FOUNDATION_EXPORT double Pods_DomainVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_DomainVersionString[];
 

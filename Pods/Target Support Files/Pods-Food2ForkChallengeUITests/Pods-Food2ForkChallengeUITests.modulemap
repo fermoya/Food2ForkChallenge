@@ -1,6 +1,0 @@
-framework module Pods_Food2ForkChallengeUITests {
-  umbrella header "Pods-Food2ForkChallengeUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
