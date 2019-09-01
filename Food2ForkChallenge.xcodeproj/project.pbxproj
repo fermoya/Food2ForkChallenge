@@ -3,39 +3,129 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		025740E0A5A2F00B93D6A2D5 /* Pods_Food2ForkChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7ADCBAD38BFB33C734AE097 /* Pods_Food2ForkChallenge.framework */; };
 		17E80699231C4E4200D709E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E80698231C4E4200D709E6 /* AppDelegate.swift */; };
-		17E8069B231C4E4200D709E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E8069A231C4E4200D709E6 /* ViewController.swift */; };
-		17E8069E231C4E4200D709E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E8069C231C4E4200D709E6 /* Main.storyboard */; };
 		17E806A0231C4E4300D709E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17E8069F231C4E4300D709E6 /* Assets.xcassets */; };
 		17E806A3231C4E4300D709E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E806A1231C4E4300D709E6 /* LaunchScreen.storyboard */; };
-		17E806AE231C4E4400D709E6 /* Food2ForkChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E806AD231C4E4400D709E6 /* Food2ForkChallengeUITests.swift */; };
+		17E806C2231C503B00D709E6 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 17E806C0231C503B00D709E6 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17E806C5231C503B00D709E6 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E806BE231C503B00D709E6 /* Domain.framework */; };
+		17E806C6231C503B00D709E6 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17E806BE231C503B00D709E6 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		17E806D9231C505300D709E6 /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E806D0231C505300D709E6 /* Repository.framework */; };
+		17E806E0231C505300D709E6 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E806DF231C505300D709E6 /* RepositoryTests.swift */; };
+		17E806E2231C505300D709E6 /* Repository.h in Headers */ = {isa = PBXBuildFile; fileRef = 17E806D2231C505300D709E6 /* Repository.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17E806E5231C505300D709E6 /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E806D0231C505300D709E6 /* Repository.framework */; };
+		17E806E6231C505300D709E6 /* Repository.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17E806D0231C505300D709E6 /* Repository.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		17E806F0231C50CF00D709E6 /* RespositoryContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E806EF231C50CF00D709E6 /* RespositoryContainer.swift */; };
+		17E806F2231C50E300D709E6 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E806F1231C50E300D709E6 /* DataStore.swift */; };
+		17E806F5231C515800D709E6 /* Food2ForkWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E806F4231C515800D709E6 /* Food2ForkWebservice.swift */; };
+		17E806F7231C516900D709E6 /* Food2ForkEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E806F6231C516900D709E6 /* Food2ForkEndpoint.swift */; };
+		17E806F9231C544D00D709E6 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E806F8231C544D00D709E6 /* Recipe.swift */; };
+		17E806FC231C584B00D709E6 /* RecipesWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E806FB231C584B00D709E6 /* RecipesWrapper.swift */; };
+		17E806FF231C58ED00D709E6 /* Recipe+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E806FE231C58ED00D709E6 /* Recipe+Decodable.swift */; };
+		17E80709231C5ED000D709E6 /* UserInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 17E80707231C5ED000D709E6 /* UserInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17E8070C231C5ED000D709E6 /* UserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E80705231C5ED000D709E6 /* UserInterface.framework */; };
+		17E8070D231C5ED000D709E6 /* UserInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17E80705231C5ED000D709E6 /* UserInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		17E80713231C5F8700D709E6 /* UserInterfaceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E80712231C5F8700D709E6 /* UserInterfaceContainer.swift */; };
+		A960D9FC4B44F18DA30D0957 /* Pods_RepositoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741B779EE19A5085001C2843 /* Pods_RepositoryTests.framework */; };
+		E2BAF72BBF11CE536D300000 /* Pods_Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E513EF707D4CBBDE1D185156 /* Pods_Repository.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		17E806AA231C4E4300D709E6 /* PBXContainerItemProxy */ = {
+		17E806C3231C503B00D709E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17E8068D231C4E4200D709E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17E806BD231C503B00D709E6;
+			remoteInfo = Domain;
+		};
+		17E806DA231C505300D709E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17E8068D231C4E4200D709E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17E806CF231C505300D709E6;
+			remoteInfo = Repository;
+		};
+		17E806DC231C505300D709E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 17E8068D231C4E4200D709E6 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 17E80694231C4E4200D709E6;
 			remoteInfo = Food2ForkChallenge;
 		};
+		17E806E3231C505300D709E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17E8068D231C4E4200D709E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17E806CF231C505300D709E6;
+			remoteInfo = Repository;
+		};
+		17E8070A231C5ED000D709E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17E8068D231C4E4200D709E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17E80704231C5ED000D709E6;
+			remoteInfo = UserInterface;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		17E806CA231C503B00D709E6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				17E806E6231C505300D709E6 /* Repository.framework in Embed Frameworks */,
+				17E8070D231C5ED000D709E6 /* UserInterface.framework in Embed Frameworks */,
+				17E806C6231C503B00D709E6 /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0586EE94BFD7AB9456720F6C /* Pods-Food2ForkChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food2ForkChallenge.release.xcconfig"; path = "Target Support Files/Pods-Food2ForkChallenge/Pods-Food2ForkChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		17E80695231C4E4200D709E6 /* Food2ForkChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Food2ForkChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17E80698231C4E4200D709E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17E8069A231C4E4200D709E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		17E8069D231C4E4200D709E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17E8069F231C4E4300D709E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17E806A2231C4E4300D709E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17E806A4231C4E4300D709E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17E806A9231C4E4300D709E6 /* Food2ForkChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Food2ForkChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		17E806AD231C4E4400D709E6 /* Food2ForkChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food2ForkChallengeUITests.swift; sourceTree = "<group>"; };
-		17E806AF231C4E4400D709E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17E806BE231C503B00D709E6 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17E806C0231C503B00D709E6 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		17E806C1231C503B00D709E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17E806D0231C505300D709E6 /* Repository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Repository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17E806D2231C505300D709E6 /* Repository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
+		17E806D3231C505300D709E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17E806D8231C505300D709E6 /* RepositoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepositoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17E806DF231C505300D709E6 /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
+		17E806E1231C505300D709E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17E806EF231C50CF00D709E6 /* RespositoryContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RespositoryContainer.swift; sourceTree = "<group>"; };
+		17E806F1231C50E300D709E6 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		17E806F4231C515800D709E6 /* Food2ForkWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food2ForkWebservice.swift; sourceTree = "<group>"; };
+		17E806F6231C516900D709E6 /* Food2ForkEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food2ForkEndpoint.swift; sourceTree = "<group>"; };
+		17E806F8231C544D00D709E6 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		17E806FB231C584B00D709E6 /* RecipesWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesWrapper.swift; sourceTree = "<group>"; };
+		17E806FE231C58ED00D709E6 /* Recipe+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+Decodable.swift"; sourceTree = "<group>"; };
+		17E80705231C5ED000D709E6 /* UserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17E80707231C5ED000D709E6 /* UserInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInterface.h; sourceTree = "<group>"; };
+		17E80708231C5ED000D709E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17E80712231C5F8700D709E6 /* UserInterfaceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInterfaceContainer.swift; sourceTree = "<group>"; };
+		1D7A1D96AB6B69743BD771B2 /* Pods-RepositoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositoryTests.release.xcconfig"; path = "Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests.release.xcconfig"; sourceTree = "<group>"; };
+		310616F2992504962ACD4BC4 /* Pods-Repository.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repository.release.xcconfig"; path = "Target Support Files/Pods-Repository/Pods-Repository.release.xcconfig"; sourceTree = "<group>"; };
+		5D3E8D14952A4937221E24C1 /* Pods-Food2ForkChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food2ForkChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-Food2ForkChallengeUITests/Pods-Food2ForkChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5EB622E9D12738244BDFA700 /* Pods-Food2ForkChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food2ForkChallenge.debug.xcconfig"; path = "Target Support Files/Pods-Food2ForkChallenge/Pods-Food2ForkChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		741B779EE19A5085001C2843 /* Pods_RepositoryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepositoryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D6978768D730472BE3AE37E /* Pods_Food2ForkChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Food2ForkChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A3F7DF63DE47A18BEB9ECBB /* Pods-RepositoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositoryTests.debug.xcconfig"; path = "Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6EEEBE053EC429DE463E765 /* Pods-Food2ForkChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food2ForkChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-Food2ForkChallengeUITests/Pods-Food2ForkChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E513EF707D4CBBDE1D185156 /* Pods_Repository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Repository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7ADCBAD38BFB33C734AE097 /* Pods_Food2ForkChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Food2ForkChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6BA91CA8E4BCA1A43079B31 /* Pods-Repository.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repository.debug.xcconfig"; path = "Target Support Files/Pods-Repository/Pods-Repository.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,10 +133,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17E806E5231C505300D709E6 /* Repository.framework in Frameworks */,
+				17E806C5231C503B00D709E6 /* Domain.framework in Frameworks */,
+				025740E0A5A2F00B93D6A2D5 /* Pods_Food2ForkChallenge.framework in Frameworks */,
+				17E8070C231C5ED000D709E6 /* UserInterface.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		17E806A6231C4E4300D709E6 /* Frameworks */ = {
+		17E806BB231C503B00D709E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17E806CD231C505300D709E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2BAF72BBF11CE536D300000 /* Pods_Repository.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17E806D5231C505300D709E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17E806D9231C505300D709E6 /* Repository.framework in Frameworks */,
+				A960D9FC4B44F18DA30D0957 /* Pods_RepositoryTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17E80702231C5ED000D709E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,8 +178,13 @@
 			isa = PBXGroup;
 			children = (
 				17E80697231C4E4200D709E6 /* Food2ForkChallenge */,
-				17E806AC231C4E4300D709E6 /* Food2ForkChallengeUITests */,
+				17E806BF231C503B00D709E6 /* Domain */,
+				17E806D1231C505300D709E6 /* Repository */,
+				17E806DE231C505300D709E6 /* RepositoryTests */,
+				17E80706231C5ED000D709E6 /* UserInterface */,
 				17E80696231C4E4200D709E6 /* Products */,
+				BE0C1643B0FD1A900781EF3C /* Pods */,
+				9A7CD7F9962D7E86E524A9B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,7 +192,10 @@
 			isa = PBXGroup;
 			children = (
 				17E80695231C4E4200D709E6 /* Food2ForkChallenge.app */,
-				17E806A9231C4E4300D709E6 /* Food2ForkChallengeUITests.xctest */,
+				17E806BE231C503B00D709E6 /* Domain.framework */,
+				17E806D0231C505300D709E6 /* Repository.framework */,
+				17E806D8231C505300D709E6 /* RepositoryTests.xctest */,
+				17E80705231C5ED000D709E6 /* UserInterface.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,62 +203,268 @@
 		17E80697231C4E4200D709E6 /* Food2ForkChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				17E806B8231C4F5200D709E6 /* Support */,
 				17E80698231C4E4200D709E6 /* AppDelegate.swift */,
-				17E8069A231C4E4200D709E6 /* ViewController.swift */,
-				17E8069C231C4E4200D709E6 /* Main.storyboard */,
-				17E8069F231C4E4300D709E6 /* Assets.xcassets */,
-				17E806A1231C4E4300D709E6 /* LaunchScreen.storyboard */,
-				17E806A4231C4E4300D709E6 /* Info.plist */,
 			);
 			path = Food2ForkChallenge;
 			sourceTree = "<group>";
 		};
-		17E806AC231C4E4300D709E6 /* Food2ForkChallengeUITests */ = {
+		17E806B8231C4F5200D709E6 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				17E806AD231C4E4400D709E6 /* Food2ForkChallengeUITests.swift */,
-				17E806AF231C4E4400D709E6 /* Info.plist */,
+				17E8069F231C4E4300D709E6 /* Assets.xcassets */,
+				17E806A1231C4E4300D709E6 /* LaunchScreen.storyboard */,
+				17E806A4231C4E4300D709E6 /* Info.plist */,
 			);
-			path = Food2ForkChallengeUITests;
+			path = Support;
+			sourceTree = "<group>";
+		};
+		17E806BF231C503B00D709E6 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				17E806EE231C508400D709E6 /* Support */,
+				17E806F8231C544D00D709E6 /* Recipe.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		17E806D1231C505300D709E6 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				17E806F3231C514200D709E6 /* Food2Fork */,
+				17E806ED231C507400D709E6 /* Support */,
+				17E806EF231C50CF00D709E6 /* RespositoryContainer.swift */,
+				17E806F1231C50E300D709E6 /* DataStore.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		17E806DE231C505300D709E6 /* RepositoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				17E806DF231C505300D709E6 /* RepositoryTests.swift */,
+				17E806E1231C505300D709E6 /* Info.plist */,
+			);
+			path = RepositoryTests;
+			sourceTree = "<group>";
+		};
+		17E806ED231C507400D709E6 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				17E806D2231C505300D709E6 /* Repository.h */,
+				17E806D3231C505300D709E6 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		17E806EE231C508400D709E6 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				17E806C0231C503B00D709E6 /* Domain.h */,
+				17E806C1231C503B00D709E6 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		17E806F3231C514200D709E6 /* Food2Fork */ = {
+			isa = PBXGroup;
+			children = (
+				17E806FD231C58D200D709E6 /* Mappers */,
+				17E806FA231C583C00D709E6 /* Entities */,
+				17E806F4231C515800D709E6 /* Food2ForkWebservice.swift */,
+				17E806F6231C516900D709E6 /* Food2ForkEndpoint.swift */,
+			);
+			path = Food2Fork;
+			sourceTree = "<group>";
+		};
+		17E806FA231C583C00D709E6 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				17E806FB231C584B00D709E6 /* RecipesWrapper.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		17E806FD231C58D200D709E6 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				17E806FE231C58ED00D709E6 /* Recipe+Decodable.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		17E80706231C5ED000D709E6 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				17E80711231C5EF100D709E6 /* Support */,
+				17E80712231C5F8700D709E6 /* UserInterfaceContainer.swift */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		17E80711231C5EF100D709E6 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				17E80707231C5ED000D709E6 /* UserInterface.h */,
+				17E80708231C5ED000D709E6 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		9A7CD7F9962D7E86E524A9B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7ADCBAD38BFB33C734AE097 /* Pods_Food2ForkChallenge.framework */,
+				7D6978768D730472BE3AE37E /* Pods_Food2ForkChallengeUITests.framework */,
+				E513EF707D4CBBDE1D185156 /* Pods_Repository.framework */,
+				741B779EE19A5085001C2843 /* Pods_RepositoryTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE0C1643B0FD1A900781EF3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EB622E9D12738244BDFA700 /* Pods-Food2ForkChallenge.debug.xcconfig */,
+				0586EE94BFD7AB9456720F6C /* Pods-Food2ForkChallenge.release.xcconfig */,
+				B6EEEBE053EC429DE463E765 /* Pods-Food2ForkChallengeUITests.debug.xcconfig */,
+				5D3E8D14952A4937221E24C1 /* Pods-Food2ForkChallengeUITests.release.xcconfig */,
+				F6BA91CA8E4BCA1A43079B31 /* Pods-Repository.debug.xcconfig */,
+				310616F2992504962ACD4BC4 /* Pods-Repository.release.xcconfig */,
+				8A3F7DF63DE47A18BEB9ECBB /* Pods-RepositoryTests.debug.xcconfig */,
+				1D7A1D96AB6B69743BD771B2 /* Pods-RepositoryTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		17E806B9231C503B00D709E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17E806C2231C503B00D709E6 /* Domain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17E806CB231C505300D709E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17E806E2231C505300D709E6 /* Repository.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17E80700231C5ED000D709E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17E80709231C5ED000D709E6 /* UserInterface.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		17E80694231C4E4200D709E6 /* Food2ForkChallenge */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17E806B2231C4E4400D709E6 /* Build configuration list for PBXNativeTarget "Food2ForkChallenge" */;
 			buildPhases = (
+				2E287F17C8B41543A4131CF4 /* [CP] Check Pods Manifest.lock */,
 				17E80691231C4E4200D709E6 /* Sources */,
 				17E80692231C4E4200D709E6 /* Frameworks */,
 				17E80693231C4E4200D709E6 /* Resources */,
+				17E806CA231C503B00D709E6 /* Embed Frameworks */,
+				09830B79F6E1E8E7649FFB17 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				17E806C4231C503B00D709E6 /* PBXTargetDependency */,
+				17E806E4231C505300D709E6 /* PBXTargetDependency */,
+				17E8070B231C5ED000D709E6 /* PBXTargetDependency */,
 			);
 			name = Food2ForkChallenge;
 			productName = Food2ForkChallenge;
 			productReference = 17E80695231C4E4200D709E6 /* Food2ForkChallenge.app */;
 			productType = "com.apple.product-type.application";
 		};
-		17E806A8231C4E4300D709E6 /* Food2ForkChallengeUITests */ = {
+		17E806BD231C503B00D709E6 /* Domain */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17E806B5231C4E4400D709E6 /* Build configuration list for PBXNativeTarget "Food2ForkChallengeUITests" */;
+			buildConfigurationList = 17E806C7231C503B00D709E6 /* Build configuration list for PBXNativeTarget "Domain" */;
 			buildPhases = (
-				17E806A5231C4E4300D709E6 /* Sources */,
-				17E806A6231C4E4300D709E6 /* Frameworks */,
-				17E806A7231C4E4300D709E6 /* Resources */,
+				17E806B9231C503B00D709E6 /* Headers */,
+				17E806BA231C503B00D709E6 /* Sources */,
+				17E806BB231C503B00D709E6 /* Frameworks */,
+				17E806BC231C503B00D709E6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				17E806AB231C4E4300D709E6 /* PBXTargetDependency */,
 			);
-			name = Food2ForkChallengeUITests;
-			productName = Food2ForkChallengeUITests;
-			productReference = 17E806A9231C4E4300D709E6 /* Food2ForkChallengeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = Domain;
+			productName = Domain;
+			productReference = 17E806BE231C503B00D709E6 /* Domain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		17E806CF231C505300D709E6 /* Repository */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17E806E7231C505300D709E6 /* Build configuration list for PBXNativeTarget "Repository" */;
+			buildPhases = (
+				499C10713E1FDD259DC06D09 /* [CP] Check Pods Manifest.lock */,
+				17E806CB231C505300D709E6 /* Headers */,
+				17E806CC231C505300D709E6 /* Sources */,
+				17E806CD231C505300D709E6 /* Frameworks */,
+				17E806CE231C505300D709E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Repository;
+			productName = Repository;
+			productReference = 17E806D0231C505300D709E6 /* Repository.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		17E806D7231C505300D709E6 /* RepositoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17E806EA231C505300D709E6 /* Build configuration list for PBXNativeTarget "RepositoryTests" */;
+			buildPhases = (
+				B7350EA1F79BCC1B00D8B22B /* [CP] Check Pods Manifest.lock */,
+				17E806D4231C505300D709E6 /* Sources */,
+				17E806D5231C505300D709E6 /* Frameworks */,
+				17E806D6231C505300D709E6 /* Resources */,
+				780EA3E6E595CCB605371A55 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17E806DB231C505300D709E6 /* PBXTargetDependency */,
+				17E806DD231C505300D709E6 /* PBXTargetDependency */,
+			);
+			name = RepositoryTests;
+			productName = RepositoryTests;
+			productReference = 17E806D8231C505300D709E6 /* RepositoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		17E80704231C5ED000D709E6 /* UserInterface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17E80710231C5ED000D709E6 /* Build configuration list for PBXNativeTarget "UserInterface" */;
+			buildPhases = (
+				17E80700231C5ED000D709E6 /* Headers */,
+				17E80701231C5ED000D709E6 /* Sources */,
+				17E80702231C5ED000D709E6 /* Frameworks */,
+				17E80703231C5ED000D709E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UserInterface;
+			productName = UserInterface;
+			productReference = 17E80705231C5ED000D709E6 /* UserInterface.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -147,9 +479,21 @@
 					17E80694231C4E4200D709E6 = {
 						CreatedOnToolsVersion = 10.3;
 					};
-					17E806A8231C4E4300D709E6 = {
+					17E806BD231C503B00D709E6 = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
+					17E806CF231C505300D709E6 = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
+					17E806D7231C505300D709E6 = {
 						CreatedOnToolsVersion = 10.3;
 						TestTargetID = 17E80694231C4E4200D709E6;
+					};
+					17E80704231C5ED000D709E6 = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -167,7 +511,10 @@
 			projectRoot = "";
 			targets = (
 				17E80694231C4E4200D709E6 /* Food2ForkChallenge */,
-				17E806A8231C4E4300D709E6 /* Food2ForkChallengeUITests */,
+				17E806BD231C503B00D709E6 /* Domain */,
+				17E806CF231C505300D709E6 /* Repository */,
+				17E806D7231C505300D709E6 /* RepositoryTests */,
+				17E80704231C5ED000D709E6 /* UserInterface */,
 			);
 		};
 /* End PBXProject section */
@@ -179,11 +526,31 @@
 			files = (
 				17E806A3231C4E4300D709E6 /* LaunchScreen.storyboard in Resources */,
 				17E806A0231C4E4300D709E6 /* Assets.xcassets in Resources */,
-				17E8069E231C4E4200D709E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		17E806A7231C4E4300D709E6 /* Resources */ = {
+		17E806BC231C503B00D709E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17E806CE231C505300D709E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17E806D6231C505300D709E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17E80703231C5ED000D709E6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,43 +559,186 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09830B79F6E1E8E7649FFB17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Food2ForkChallenge/Pods-Food2ForkChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Food2ForkChallenge/Pods-Food2ForkChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Food2ForkChallenge/Pods-Food2ForkChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E287F17C8B41543A4131CF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Food2ForkChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		499C10713E1FDD259DC06D09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Repository-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		780EA3E6E595CCB605371A55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7350EA1F79BCC1B00D8B22B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RepositoryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		17E80691231C4E4200D709E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17E8069B231C4E4200D709E6 /* ViewController.swift in Sources */,
 				17E80699231C4E4200D709E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		17E806A5231C4E4300D709E6 /* Sources */ = {
+		17E806BA231C503B00D709E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17E806AE231C4E4400D709E6 /* Food2ForkChallengeUITests.swift in Sources */,
+				17E806F9231C544D00D709E6 /* Recipe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17E806CC231C505300D709E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17E806F5231C515800D709E6 /* Food2ForkWebservice.swift in Sources */,
+				17E806F0231C50CF00D709E6 /* RespositoryContainer.swift in Sources */,
+				17E806F2231C50E300D709E6 /* DataStore.swift in Sources */,
+				17E806FF231C58ED00D709E6 /* Recipe+Decodable.swift in Sources */,
+				17E806FC231C584B00D709E6 /* RecipesWrapper.swift in Sources */,
+				17E806F7231C516900D709E6 /* Food2ForkEndpoint.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17E806D4231C505300D709E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17E806E0231C505300D709E6 /* RepositoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17E80701231C5ED000D709E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17E80713231C5F8700D709E6 /* UserInterfaceContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		17E806AB231C4E4300D709E6 /* PBXTargetDependency */ = {
+		17E806C4231C503B00D709E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17E806BD231C503B00D709E6 /* Domain */;
+			targetProxy = 17E806C3231C503B00D709E6 /* PBXContainerItemProxy */;
+		};
+		17E806DB231C505300D709E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17E806CF231C505300D709E6 /* Repository */;
+			targetProxy = 17E806DA231C505300D709E6 /* PBXContainerItemProxy */;
+		};
+		17E806DD231C505300D709E6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 17E80694231C4E4200D709E6 /* Food2ForkChallenge */;
-			targetProxy = 17E806AA231C4E4300D709E6 /* PBXContainerItemProxy */;
+			targetProxy = 17E806DC231C505300D709E6 /* PBXContainerItemProxy */;
+		};
+		17E806E4231C505300D709E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17E806CF231C505300D709E6 /* Repository */;
+			targetProxy = 17E806E3231C505300D709E6 /* PBXContainerItemProxy */;
+		};
+		17E8070B231C5ED000D709E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17E80704231C5ED000D709E6 /* UserInterface */;
+			targetProxy = 17E8070A231C5ED000D709E6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		17E8069C231C4E4200D709E6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17E8069D231C4E4200D709E6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		17E806A1231C4E4300D709E6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -358,11 +868,13 @@
 		};
 		17E806B3231C4E4400D709E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EB622E9D12738244BDFA700 /* Pods-Food2ForkChallenge.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPBB5C5CRP;
-				INFOPLIST_FILE = Food2ForkChallenge/Info.plist;
+				INFOPLIST_FILE = Food2ForkChallenge/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,11 +888,13 @@
 		};
 		17E806B4231C4E4400D709E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0586EE94BFD7AB9456720F6C /* Pods-Food2ForkChallenge.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPBB5C5CRP;
-				INFOPLIST_FILE = Food2ForkChallenge/Info.plist;
+				INFOPLIST_FILE = Food2ForkChallenge/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,43 +906,224 @@
 			};
 			name = Release;
 		};
-		17E806B6231C4E4400D709E6 /* Debug */ = {
+		17E806C8231C503B00D709E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LPBB5C5CRP;
-				INFOPLIST_FILE = Food2ForkChallengeUITests/Info.plist;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Support/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.Food2ForkChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Food2ForkChallenge;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		17E806B7231C4E4400D709E6 /* Release */ = {
+		17E806C9231C503B00D709E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LPBB5C5CRP;
-				INFOPLIST_FILE = Food2ForkChallengeUITests/Info.plist;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Support/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.Food2ForkChallengeUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		17E806E8231C505300D709E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6BA91CA8E4BCA1A43079B31 /* Pods-Repository.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LPBB5C5CRP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Repository/Support/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.Repository;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		17E806E9231C505300D709E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 310616F2992504962ACD4BC4 /* Pods-Repository.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LPBB5C5CRP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Repository/Support/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.Repository;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		17E806EB231C505300D709E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A3F7DF63DE47A18BEB9ECBB /* Pods-RepositoryTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPBB5C5CRP;
+				INFOPLIST_FILE = RepositoryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.RepositoryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Food2ForkChallenge;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Food2ForkChallenge.app/Food2ForkChallenge";
+			};
+			name = Debug;
+		};
+		17E806EC231C505300D709E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D7A1D96AB6B69743BD771B2 /* Pods-RepositoryTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPBB5C5CRP;
+				INFOPLIST_FILE = RepositoryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.RepositoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Food2ForkChallenge.app/Food2ForkChallenge";
+			};
+			name = Release;
+		};
+		17E8070E231C5ED000D709E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LPBB5C5CRP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UserInterface/Support/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.UserInterface;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		17E8070F231C5ED000D709E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LPBB5C5CRP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UserInterface/Support/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.UserInterface;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -453,11 +1148,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		17E806B5231C4E4400D709E6 /* Build configuration list for PBXNativeTarget "Food2ForkChallengeUITests" */ = {
+		17E806C7231C503B00D709E6 /* Build configuration list for PBXNativeTarget "Domain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				17E806B6231C4E4400D709E6 /* Debug */,
-				17E806B7231C4E4400D709E6 /* Release */,
+				17E806C8231C503B00D709E6 /* Debug */,
+				17E806C9231C503B00D709E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17E806E7231C505300D709E6 /* Build configuration list for PBXNativeTarget "Repository" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17E806E8231C505300D709E6 /* Debug */,
+				17E806E9231C505300D709E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17E806EA231C505300D709E6 /* Build configuration list for PBXNativeTarget "RepositoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17E806EB231C505300D709E6 /* Debug */,
+				17E806EC231C505300D709E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17E80710231C5ED000D709E6 /* Build configuration list for PBXNativeTarget "UserInterface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17E8070E231C5ED000D709E6 /* Debug */,
+				17E8070F231C5ED000D709E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
