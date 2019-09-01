@@ -11,8 +11,12 @@ import Foundation
 /// Dependency Injection container for the Respository Module
 public final class RepositoryContainer {
     
-    public var dataStore: DataStore {
+    var dataStore: DataStore {
         return Food2ForkWebservice()
+    }
+    
+    public var dataStorePager: DataStorePager {
+        return DataStorePager(dataStore: dataStore)
     }
     
     public init() { }
