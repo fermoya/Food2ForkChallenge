@@ -12,6 +12,7 @@ import Mockingjay
 
 class RepositoryTests: XCTestCase {
     
+    // Fetches the first page of the Food2ForkAPI and checks the results are not empty
     func testFetchRecipesFirstPage() {
         let dataStore = Food2ForkWebservice()
         let expectation = XCTestExpectation(description: "Fetching recipes. Page 1")
@@ -28,6 +29,7 @@ class RepositoryTests: XCTestCase {
         wait(for: [expectation], timeout: 3)
     }
     
+    // Mocks a Forbidden response and asserts the error raised is the expected
     func testFetchRecipesForbidden() {
         let dataStore = Food2ForkWebservice()
         let page: UInt = 3

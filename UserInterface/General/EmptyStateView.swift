@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// View to display a simple Error Text Message when some error occurs
 class EmptyStateView: UIView {
 
     private let textLayer = CATextLayer()

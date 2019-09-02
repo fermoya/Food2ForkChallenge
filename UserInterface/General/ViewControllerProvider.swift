@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Any class implementing this protocol should be able to provide a view controller for navigation
 protocol ViewControllerProvider {
     var viewController: UIViewController { get }
 }

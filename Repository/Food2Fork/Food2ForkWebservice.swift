@@ -12,8 +12,10 @@ import Alamofire
 
 typealias HttpDataResult = Swift.Result<Data, DataStoreError>
 
+/// Data Store for the Food2Fork API
 class Food2ForkWebservice: DataStore {
     
+    /// This Api Key should never be, but in an Info.plist file
     let apiKey = "b1a7e7ab9708119f4107b0b090a76bf3"
     
     func fetchRecipes(at page: UInt? = 1, completion: @escaping (RecipesResponse) -> Void) {
