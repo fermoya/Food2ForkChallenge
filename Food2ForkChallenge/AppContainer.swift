@@ -10,12 +10,14 @@ import Foundation
 import Repository
 import UserInterface
 
+/// Dependency Injection container for the App Module
 final class AppContainer {
     
-    private(set) var window = UIWindow(frame: UIScreen.main.bounds)
-    private(set) lazy var navigationController = UINavigationController()
+    private let navigationController = UINavigationController()
     private(set) lazy var repositoryContainer = RepositoryContainer()
     private(set) lazy var userInterfaceContainer = UserInterfaceContainer(navigationController: navigationController, repositoryContainer: repositoryContainer)
+    
+    let window = UIWindow(frame: UIScreen.main.bounds)
     
     init() { }
     

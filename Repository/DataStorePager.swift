@@ -9,6 +9,7 @@
 import Foundation
 import Domain
 
+/// This class pages a Data Store till there are none left
 public class DataStorePager {
     
     private let dataStore: DataStore

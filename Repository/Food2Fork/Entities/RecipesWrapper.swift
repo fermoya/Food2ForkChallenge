@@ -9,6 +9,7 @@
 import Foundation
 import Domain
 
+/// Wrapper for the Search Food2Fork API response
 struct RecipesWrapper {
     var recipes: [Recipe]
 }

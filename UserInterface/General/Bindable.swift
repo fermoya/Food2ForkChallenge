@@ -8,8 +8,10 @@
 
 import Foundation
 
+/// Basic protocol to identify view models
 protocol ViewModel: class { }
 
+/// Forces the implementing class to have a View Model and bind to it
 protocol Bindable: class {
     
     associatedtype V where V: ViewModel
